@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -9,76 +8,157 @@
 
     <title> Nepal Environmental Treks & Expedition </title>
     <link href="css/index.css" rel="stylesheet">
+    <script src="js/index.js"></script>
 </head>
+
 <body>
     <nav>
-        <div class="left">
-            <img src="img/logo.png">
+        <a href="#" class="left">
             <h1>
-                <a href="#">Nepal Environmental Treks &amp; Expedition</a>
+                <!-- <img src="img/logo.png"> -->
+                Nepal Environmental Treks &amp; Expedition
             </h1>
-        </div>
+        </a>
 
         <div class="right">
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-                <li class="login"><a href="#">Login</a></li>
+                <!-- <li class="login"><a href="#">Login</a></li> -->
             </ul>
         </div>
     </nav>
     <header>
-        <div class="title" style="background-image: url('img/title.jpg');">
+        <img src="img/title-bg-2.png">
+
+        <div class="section-1">
             <h2>
-                Plan your trip to Nepal
+                Find the perfect trip for you
             </h2>
 
-            <form>
-                <input class="num" placeholder="No of people">
-                <input class="when" placeholder="When">
+            <form action="search.html">
+                <!--input class="num" placeholder="# people">
+                <input class="when" placeholder="When"-->
+                <input class="where" placeholder="Destination">
                 <input class="for" placeholder="Activity">
 
                 <button> <i class="fas fa-chevron-right"></i> </button>
             </form>
         </div>
 
-        <div class="bottom-bar">
-            <ul>
-                <li> <i class="fas fa-check"></i> Affordable Price </li>
-                <li> <i class="fas fa-check"></i> More Than 20 Years Experience </li>
-                <li> <i class="fas fa-check"></i> More Than 100 Packages </li>
-            </ul>
+        <div class="section-2">
+            <span> Or </span>
+            <a href="#">Customize your own trip</a>
         </div>
+
+
+        <section id="activities">
+            <a href="#" class="activity">
+                <img src="img/trek.jpg">
+                <span> Trekking </span>
+            </a>
+            <a href="#" class="activity">
+                <img src="img/expedition.jpg">
+                <span> Expedition </span>
+            </a>
+            <a href="#" class="activity">
+                <img src="img/nepal-tour.jpg">
+                <span> Nepal Tour </span>
+            </a>
+            <a href="#" class="activity">
+                <img src="img/jungle.jpg">
+                <span> Jungle Safari </span>
+            </a>
+            <a href="#" class="activity">
+                <img src="img/rafting.jpg">
+                <span> Rafting </span>
+            </a>
+            <!-- <a href="#" class="activity">
+                <img src="img/trek.jpg">
+                <span> Mountain Biking </span>
+            </a> -->
+            <a href="#" class="activity">
+                <img src="img/heli.jpg">
+                <span> Heli Tour </span>
+            </a>
+        </section>
     </header>
 
-    <section id="destinations" class="gallery-section">
-        <h2>Top Destinations for 2020 <i class="fas fa-chevron-right"></i></h2>
+    <section id="deals">
+        <h2>
+            Top Deals
+        </h2>
 
-        <div class="gallery">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+        <div class="cards">
+            <a class="package card">
+                <div class="img-container">
+                    <img src="img/everest-base-camp-trek.jpg">
+                </div>
+                <h4>
+                    Everest Base Camp Trek
+                </h4>
+                <span class="days">14 days</span>
+
+                <span class="deal">Up to 40% Discount + Free 2 Days Hotel</span>
+            </a>
+            <a class="package card">
+                <div class="img-container">
+                    <img src="img/annapurna-base-camp-trek.jpg">
+                </div>
+                <h4>
+                    Annapurna Base Camp Trek
+                </h4>
+                <span class="days">14 days</span>
+
+                <span class="deal">Up to 30% Discount</span>
+            </a>
+            <a class="package card">
+                <div class="img-container">
+                    <img src="img/langtang-trek.jpg">
+                </div>
+                <h4>
+                    Langtang Classic Trek
+                </h4>
+                <span class="days">10 days</span>
+
+                <span class="deal">Up to 30% Discount</span>
+            </a>
+            <a class="package card">
+                <div class="img-container">
+                    <img src="img/village-tour.jpg">
+                </div>
+                <h4>
+                    Gorkha Pokhara Trek
+                </h4>
+                <span class="days">10 days</span>
+
+                <span class="deal">Up to 20% Discount</span>
+            </a>
+            <!-- <a class="package card"></a>
+            <a class="package card"></a>
+            <a class="package card"></a>
+            <a class="package card"></a> -->
         </div>
     </section>
 
-    <section id="packages" class="gallery-section">
-        <h2>Top Packages for 2020 <i class="fas fa-chevron-right"></i></h2>
 
-        <div class="gallery">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
+    <section id="destinations">
+        <!-- <h2>
+            Top Deals
+        </h2> -->
+
+        <div class="destination"></div>
+        <div class="destination"></div>
+        <div class="destination"></div>
+        <div class="destination"></div>
+        <div class="destination"></div>
+        <div class="destination"></div>
     </section>
+    <section id="dummy"></section>
 
-    
+        
     <link href="https://fonts.googleapis.com/css?family=Tangerine|Comfortaa|Raleway|Open+Sans|Open+Sans+Condensed&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/67b15b82e9.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
