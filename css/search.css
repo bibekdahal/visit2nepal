@@ -18,6 +18,7 @@
   --font-family-heading-2: 'Comfortaa', cursive;
   --font-family-normal: 'Open Sans', sans-serif;
   --font-family-thin: 'Open Sans Condensed', sans-serif;
+  --font-family-icon: 'Font Awesome 5 Free';
   --color-background: #f0f0f0; }
 
 *, *::before, *::after {
@@ -110,5 +111,195 @@ nav {
       color: #000; }
       nav.elevated ul li a:hover {
         color: #404040; }
+
+#status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 32px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: var(--font-family-heading);
+  background-color: var(--color-primary-dark);
+  color: #fff; }
+
+@media screen and (max-width: 500px) {
+  nav {
+    height: 36px; }
+    nav .left h1 {
+      font-size: 14px; }
+      nav .left h1 img {
+        margin-left: -42px; }
+    nav .right {
+      display: none; } }
+nav {
+  width: 100vw;
+  background-color: var(--color-primary-dark); }
+
+#filters {
+  display: flex;
+  align-items: center;
+  margin: 50px 0 0 0;
+  height: 200px;
+  width: 100vw;
+  justify-content: center;
+  background-color: var(--color-primary-dark); }
+  #filters .filter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 16px;
+    cursor: pointer; }
+    #filters .filter label {
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 600;
+      margin: 4px 10px;
+      cursor: pointer;
+      color: #eee; }
+    #filters .filter .input {
+      position: relative;
+      background: #fffd;
+      border: none;
+      outline: none;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      width: 192px;
+      height: 26px;
+      border-radius: 13px;
+      cursor: pointer; }
+      #filters .filter .input::after {
+        position: absolute;
+        right: 8px;
+        font-family: var(--font-family-icon);
+        font-weight: 900;
+        content: "\f0d7"; }
+    #filters .filter:hover label {
+      color: #fff; }
+    #filters .filter:hover .input {
+      background: #fff;
+      border: 1px solid var(--color-primary-darker); }
+  #filters .search {
+    background-color: var(--color-secondary);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 16px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 72px;
+    margin-top: 16px;
+    border-radius: 16px; }
+
+#packages {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 42px 0;
+  width: 100vw;
+  justify-content: center; }
+  #packages .package {
+    position: relative;
+    width: 356px;
+    height: 400px;
+    margin: 16px 32px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    #packages .package .img-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+      #packages .package .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center; }
+    #packages .package .details {
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+      height: 0;
+      background-color: #000e;
+      overflow: hidden;
+      color: #fff;
+      transition: all 0.4s ease-in-out; }
+      #packages .package .details > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 16px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #fffa; }
+        #packages .package .details > div > span {
+          text-transform: initial;
+          color: #fff;
+          font-family: var(--font-family-heading2); }
+    #packages .package .summary {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      z-index: 100;
+      background-color: #000a;
+      color: #fff;
+      padding-bottom: 8px;
+      min-height: 68px;
+      align-content: flex-start;
+      transition: all 0.4s ease-in-out; }
+      #packages .package .summary h4 {
+        width: 100%;
+        margin: 10px 16px;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: var(--font-family-heading); }
+      #packages .package .summary .days {
+        margin-left: 16px;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: var(--font-family-heading2);
+        color: var(--color-primary);
+        text-transform: uppercase; }
+        #packages .package .summary .days i {
+          margin-right: 4px; }
+      #packages .package .summary .price {
+        margin-left: 16px;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: var(--font-family-heading2);
+        color: var(--color-secondary);
+        text-transform: uppercase; }
+        #packages .package .summary .price i {
+          margin-right: 4px; }
+    #packages .package .deal {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 8px 10px;
+      background-color: var(--color-tertiary);
+      color: #fff;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-family: var(--font-family-heading); }
+    #packages .package:hover .details {
+      padding: 8px 0;
+      height: 82px; }
 
 /*# sourceMappingURL=search.css.map */

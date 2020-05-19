@@ -18,6 +18,7 @@
   --font-family-heading-2: 'Comfortaa', cursive;
   --font-family-normal: 'Open Sans', sans-serif;
   --font-family-thin: 'Open Sans Condensed', sans-serif;
+  --font-family-icon: 'Font Awesome 5 Free';
   --color-background: #f0f0f0; }
 
 *, *::before, *::after {
@@ -111,6 +112,27 @@ nav {
       nav.elevated ul li a:hover {
         color: #404040; }
 
+#status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 32px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: var(--font-family-heading);
+  background-color: var(--color-primary-dark);
+  color: #fff; }
+
+@media screen and (max-width: 500px) {
+  nav {
+    height: 36px; }
+    nav .left h1 {
+      font-size: 14px; }
+      nav .left h1 img {
+        margin-left: -42px; }
+    nav .right {
+      display: none; } }
 header {
   position: relative;
   width: 100vw;
@@ -517,18 +539,6 @@ footer {
       margin: 8px 0; }
       footer section a:hover {
         color: #fffa; }
-
-#status {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 32px;
-  font-size: 11px;
-  font-weight: 600;
-  font-family: var(--font-family-heading);
-  background-color: var(--color-primary-dark);
-  color: #fff; }
 
 @media screen and (max-width: 1366px) {
   #activities .activity {
