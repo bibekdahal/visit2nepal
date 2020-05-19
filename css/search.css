@@ -137,65 +137,58 @@ nav {
   width: 100vw;
   background-color: var(--color-primary-dark); }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 #filters {
   display: flex;
   align-items: center;
-  margin: 50px 0 0 0;
-  height: 200px;
-  width: 100vw;
+  margin: 92px 0 0 0;
+  padding: 0;
   justify-content: center;
-  background-color: var(--color-primary-dark); }
+  background-color: #fff;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  overflow: hidden;
+  height: 48px; }
   #filters .filter {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0 16px;
-    cursor: pointer; }
+    margin: 0 0;
+    cursor: pointer;
+    padding: 0 8px;
+    width: 142px; }
     #filters .filter label {
       text-transform: uppercase;
       font-size: 10px;
       font-weight: 600;
       margin: 4px 10px;
       cursor: pointer;
-      color: #eee; }
+      color: #666; }
     #filters .filter .input {
-      position: relative;
-      background: #fffd;
-      border: none;
-      outline: none;
-      display: flex;
-      align-items: center;
-      padding: 0 10px;
-      width: 192px;
-      height: 26px;
-      border-radius: 13px;
-      cursor: pointer; }
-      #filters .filter .input::after {
-        position: absolute;
-        right: 8px;
-        font-family: var(--font-family-icon);
-        font-weight: 900;
-        content: "\f0d7"; }
-    #filters .filter:hover label {
-      color: #fff; }
-    #filters .filter:hover .input {
-      background: #fff;
-      border: 1px solid var(--color-primary-darker); }
+      display: none; }
+    #filters .filter:not(:last-of-type) {
+      border-right: 1px solid rgba(0, 0, 0, 0.1); }
   #filters .search {
     background-color: var(--color-secondary);
     color: #fff;
     border: none;
     outline: none;
     cursor: pointer;
-    margin: 0 16px;
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 32px;
+    height: 100%;
     width: 72px;
-    margin-top: 16px;
-    border-radius: 16px; }
+    font-size: 22px; }
+    #filters .search:hover {
+      background-color: var(--color-secondary-light); }
 
 #packages {
   display: flex;
