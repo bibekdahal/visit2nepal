@@ -221,26 +221,6 @@ body {
         height: 100%;
         object-fit: cover;
         object-position: center center; }
-    #packages .package .details {
-      display: flex;
-      flex-direction: column;
-      z-index: 100;
-      height: 0;
-      background-color: #000e;
-      overflow: hidden;
-      color: #fff;
-      transition: all 0.4s ease-in-out; }
-      #packages .package .details > div {
-        display: flex;
-        justify-content: space-between;
-        padding: 2px 16px;
-        font-size: 12px;
-        text-transform: uppercase;
-        color: #fffa; }
-        #packages .package .details > div > span {
-          text-transform: initial;
-          color: #fff;
-          font-family: var(--font-family-heading2); }
     #packages .package .summary {
       display: flex;
       flex-wrap: wrap;
@@ -277,6 +257,26 @@ body {
         text-transform: uppercase; }
         #packages .package .summary .price i {
           margin-right: 4px; }
+    #packages .package .details {
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+      height: 0;
+      background-color: #000e;
+      overflow: hidden;
+      color: #fff;
+      transition: all 0.4s ease-in-out; }
+      #packages .package .details > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 16px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #fffa; }
+        #packages .package .details > div > span {
+          text-transform: initial;
+          color: #fff;
+          font-family: var(--font-family-heading2); }
     #packages .package .deal {
       position: absolute;
       top: 0;
@@ -294,5 +294,50 @@ body {
     #packages .package:hover .details {
       padding: 8px 0;
       height: 82px; }
+
+@media screen and (max-width: 1250px) {
+  #packages .package {
+    width: 300px;
+    height: 340px; } }
+@media screen and (max-width: 1100px) {
+  #packages .package {
+    width: 256px;
+    height: 300px; }
+    #packages .package .summary h4 {
+      font-size: 14px; }
+    #packages .package .summary .days, #packages .package .summary .price {
+      font-size: 12px; }
+    #packages .package .details > div {
+      font-size: 11px; }
+    #packages .package .deal {
+      font-size: 12px; }
+    #packages .package:hover .details {
+      height: 72px; } }
+@media screen and (max-width: 900px) {
+  #filters {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: start;
+    width: 80%; }
+    #filters .filter {
+      margin: 8px 0;
+      width: calc(100% / 3); }
+      #filters .filter:not(:last-of-type) {
+        border-right: none; }
+    #filters .search {
+      width: 100%;
+      height: 42px; } }
+@media screen and (max-width: 600px) {
+  #filters {
+    width: 90%;
+    margin-top: 64px; }
+    #filters .filter {
+      width: 100%; }
+
+  #packages {
+    margin-top: 32px; }
+    #packages .package {
+      width: 90%;
+      margin: 16px 0; } }
 
 /*# sourceMappingURL=search.css.map */
