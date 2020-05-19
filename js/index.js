@@ -1,8 +1,8 @@
 window.addEventListener('scroll', function (e) {
     var nav = document.getElementsByTagName('nav').item(0);
     if (document.documentElement.scrollTop > 96) {
-        nav.classList.add('scrolled');
+        nav.classList.add('elevated');
     } else {
-        nav.classList.remove('scrolled');
+        nav.classList.remove('elevated');
     }
 });

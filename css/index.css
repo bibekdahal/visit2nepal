@@ -98,17 +98,17 @@ nav {
           color: var(--color-primary-lighter); }
           nav .right ul li.login a:hover {
             color: var(--color-primary-light); }
-  nav.scrolled {
+  nav.elevated {
     background-color: #ffff;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5); }
-    nav.scrolled .left h1 {
+    nav.elevated .left h1 {
       color: var(--color-secondary-darker); }
-    nav.scrolled .left img {
+    nav.elevated .left img {
       margin-left: 0;
       opacity: 1; }
-    nav.scrolled ul li a {
+    nav.elevated ul li a {
       color: #000; }
-      nav.scrolled ul li a:hover {
+      nav.elevated ul li a:hover {
         color: #404040; }
 
 header {
@@ -153,11 +153,7 @@ header {
         outline: none;
         background-color: transparent;
         border-right: 1px solid rgba(0, 0, 0, 0.1);
-        width: 192px; }
-        header .section-1 form input.num {
-          width: 100px; }
-        header .section-1 form input.when {
-          width: 100px; }
+        width: 232px; }
       header .section-1 form button {
         border: none;
         margin: none;
@@ -571,14 +567,6 @@ footer {
 @media screen and (max-width: 700px) {
   header .section-1 h2 {
     font-size: 24px; }
-  header .section-1 form {
-    flex-direction: column;
-    width: 80%; }
-    header .section-1 form input {
-      width: 100%; }
-      header .section-1 form input:not(:last-child) {
-        border-right: none;
-        border-bottom: 1px solid #0001; }
 
   #footer-bg {
     background-size: cover; } }
@@ -635,15 +623,15 @@ footer {
       text-align: center; } }
 @media screen and (max-width: 916px) and (max-height: 900px) {
   #activities {
-    margin-top: 45vh; } }
+    margin-top: 54vh; } }
 @media screen and (max-width: 916px) and (max-height: 750px) {
   #activities {
-    margin-top: 40vh; } }
+    margin-top: 48vh; } }
 @media screen and (max-width: 916px) and (max-height: 600px) {
   #activities {
-    margin-top: 35vh; } }
+    margin-top: 44h; } }
 @media screen and (max-width: 916px) and (max-height: 500px) {
   #activities {
-    margin-top: 20vh; } }
+    margin-top: 35vh; } }
 
 /*# sourceMappingURL=index.css.map */
