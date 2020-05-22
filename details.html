@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> Nepal Environmental Treks & Expedition </title>
+    <link href="css/details.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <script src="js/details.js"></script>
+</head>
+<body>
+
+    <nav class="elevated">
+        <a href="./" class="left">
+            <h1>
+                <img src="img/logo.png">
+                Nepal Environmental Treks &amp; Expedition
+            </h1>
+        </a>
+
+        <div class="right">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- <li class="login"><a href="#">Login</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="img-container">
+            <img src="img/pkg/01.jpg">
+        </div>
+        <div class="img-container">
+            <img src="img/pkg/02.jpg">
+        </div>
+        <div class="img-container">
+            <img src="img/pkg/03.jpg">
+        </div>
+        <div class="img-container">
+            <img src="img/pkg/04.jpg">
+        </div>
+        <div class="img-container">
+            <img src="img/pkg/05.jpg">
+        </div>
+    </header>
+
+
+    <section id="description">
+        <h2>Everest Base Camp Trek</h2>
+
+        <div class="summary">
+            <span class="days"><i class="far fa-clock"></i> 14 Days</span>
+            <span class="price"><i class="fas fa-money-bill"></i> USD 3500</span>
+        </div>
+
+        <div class="details">
+            <div class="grade"><label>Grade:</label><span>Moderate</span></div>
+            <div class="altitude"><label>Altitude:</label><span>5545 meters</span></div>
+            <div class="season"><label>Season:</label><span>Spring, Autumn</span></div>
+        </div>
+
+        <div id="book">
+            <button>
+                Book this package
+            </button>
+            <span>Or</span>
+            <button>
+                Customize it
+            </button>
+        </div>
+
+        <div class="overview">
+            <p>
+                Everest Base Camp trek is one of the most popular treks in Nepal. It epitomizes by far the finest trekking experience in the Himalayas, whose premier objective is to see Mt. Everest, the world’s highest mountain at 8848m, along with Ama Dablam, Cho Oyu, Lhotse, Nuptse among others.
+            </p>
+
+            <p>
+                Add to that, the unique and colorful Sherpa culture, the visit to 500 year old Thyangboche Monastery, the pristine wilderness of Sagarmatha National Park and the trek to Kalapatthar at an altitude of 5643m to see the majestic sunrise over Everest.
+            </p>
+
+            <p>
+                Everest Base Camp trek begins in Lukla, the gateway to the Everest region, and ends with a challenging walk to Everest Base Camp (5364m). Our trail passes through Sherpa villages with well cultivated fields and small hamlets, interspersed with magnificent forests of rhododendron, magnolia and giant firs. We will have a fascinating experience of watching the hustle and bustle of Namche Bazaar- famously called the capital of Sherpas- and a touch of modernity it creates. A few hours walk from Namche would bring us to Thyanboche Monastery, an incredible spiritual center in the heart of Himalayas.
+            </p>
+
+            <p>
+                The ascend to the summit of Kalapathar (5643m) rewards with brilliant views of Mount Everest and a breathtaking panorama of the world's highest mountains before returning to Pheriche and then back to Kathmandu.
+            </p>
+                
+            <p>
+                The EBC Trek can be organized at varying times of the year and for different duration. As such, this 14-day itinerary is the most appropriate one since it has been designed keeping in mind the issue of acclimatization and attractions.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="itinerary">
+        <h3> Itinerary </h3>
+        <div id="the-map"></div>
+        <ul>
+            <li>
+                <div class="day">
+                    1
+                </div>
+
+                <div class="title">
+                    Fly from Kathmandu to Lukla (2886m)
+                </div>
+
+                <div class="time">
+                    Approx 35 minutes
+                </div>
+
+                <div class="details">
+                    <p>
+                        After early morning breakfast, our guide will pick you up from the hotel and drive to the domestic airport terminal. Receive your boarding pass and fly from Kathmandu to Lukla (2886m.) that takes about 35 minutes. The flight offers you close up views of the Himalayas and romantic landscapes of hills, farms and rivers.
+                    </p>
+                    <p>
+                        On arrival in Lukla, you will begin 3 hours trek to Phakding (2640 m.). You start your trek from Lukla with a gentle climb up the mountainside on the left bank of the Dudh Koshi River. Mt. Nupla (5885m) which can be seen in the distance is a peak atop the Kongde Ridge. You descend a mountainside path that merges into your route to Everest, with views to a wonderful valley to your right; and Mt. Kusum Kang (6367m.) to the far end. Stay overnight at lodge.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="day">
+                    2
+                </div>
+
+                <div class="title">
+                    Trek from Phakding to Namche Bazaar (3440m)
+                </div>
+
+                <div class="time">
+                    Approx 5 hours
+                </div>
+
+                <div class="details">
+                    <p>
+                        Namche Bazaar (3440m) is surrounded on three sides by mountain ranges and faces the Bhote Koshi to the South. Stay overnight at lodge.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="day">
+                    3
+                </div>
+
+                <div class="title">
+                    A day for rest at Namche Bazaar
+                </div>
+
+                <div class="details">
+                    <p>
+                        For acclimatization you walk up to Khumjung where you can visit a monastery. You can also enjoy the splendid views of Everest, Ama Dablam, Thamserku, Nuptse, Lhotse, Tawoche, and Kwangde and so on. Or you can take an hour's walk up to Syangboche (3800m.) where Everest View Hotel is situated above Namche for outstanding views of Everest, Nuptse, Lhotse, Ama Dablam, Thamserku and Kusum Kangaru. Stay overnight at lodge.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="day">
+                    4
+                </div>
+
+                <div class="title">
+                    Trek from Namche Bazaar to Tyangboche (3867m.)
+                </div>
+
+                <div class="time">
+                    Approx 5 hours
+                </div>
+
+                <div class="details">
+                    <p>
+                        As you climb through the forested zone, the incline eases and a splendid view appears. You continue climbing the mountainside diagonally until you come to the stone gate built by the lamas which marks your entry into Tyangboche (3860m). Stay overnight at lodge.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="day">
+                    5
+                </div>
+
+                <div class="title">
+                    Trek from Tyangboche to Dingboche (4260m.)
+                </div>
+
+                <div class="time">
+                    Approx 5 hours
+                </div>
+
+                <div class="details">
+                    <p>
+                        Dingboche is a beautiful patchwork of fields enclosed by stone walls protecting the crops of barley, buckwheat and potatoes from the cold winds and grazing animals. Stay overnight at lodge.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="day">
+                    6
+                </div>
+
+                <div class="title">
+                    Rest day at Dingboche
+                </div>
+
+                <div class="details">
+                    <p>
+                        There are some breathtaking views of the North face of Ama Dablam as well as Lhotse-Nuptse ridge as you explore this beautiful valley that leads up to Island Peak. The walk is short with a good chance to relax in the afternoon. Another option is to hike up to Chhukum, where you can enjoy the panoramic view of Island peak, Ama Dablam, Makalu, Tawoche peak and others. Stay overnight at lodge.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="day">
+                    7
+                </div>
+
+                <div class="title">
+                    Trek from Dingboche to Lobuche (4930m.)
+                </div>
+
+                <div class="time">
+                    Approx 5 hours 30 minutes
+                </div>
+
+                <div class="details">
+                    <p>
+                        The onward journey leads north for up to 50 minutes until you come to a Maniwall  Stupa. The trail follows a downward path to Pheriche village. Today's walk offers views of the Mt.Tawache, Ama Dablam and to the north Pokalde (5741m), Kongma-tse (5820m) and the great wall of Nuptse. After two hours walk, the trail from Pheriche joins near Dugla (4595m) before a small wooden bridge over the river of Khumbu glacier. Stay overnight at lodge.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="day">
+                    8
+                </div>
+
+                <div class="title">
+                    Trek from Lobuche to Everest Base Camp (5486m.) via Gorakshep (5180m.) and again back to Gorakshep
+                </div>
+
+                <div class="time">
+                    Approx 7 hours
+                </div>
+
+                <div class="details">
+                    <p>
+                        Trek up the valley following the rocky moraine path, view icy glacial ponds and icebergs down below of the Khumbu glacier. Gorakshep is the location of the original Everest Base Camp with the new camp being further up the valley. Now the trail winds through a rocky path and the Khumbu glacier. The view of Nuptse, Lho-La and Khumbu Tse appears in  front of you. Stay overnight at lodge.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="day">
+                    9
+                </div>
+
+                <div class="title">
+                    Trek from Gorakshep to Kala Patthar (5545m.) and then to Pheriche (4243m.)
+                </div>
+
+                <div class="time">
+                    Approx 6 hours
+                </div>
+
+                <div class="details">
+                    <p>
+                        You accomplish an early morning climb to Kala Patthar (5545m.) and enjoy majestic sunrise and close-up view of Mt. Everest. From Kala Patthar you can have a panoramic view of Mt. Everest and many other mountain peaks like Mt. Pumori, Mt. Lingtren, Mt. Khumbu Tse, Mt. Nuptse, Mt. Lhotse, Mt. Ama Dablam, Mt. Thamserku and many more peaks. Yaks are normally used to ferry daily essentials. Stay overnight at lodge.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="day">
+                    10
+                </div>
+
+                <div class="title">
+                    Trek from Pheriche to Tyangboche (3867 m.)
+                </div>
+
+                <div class="time">
+                    Approx 5 hours
+                </div>
+
+                <div class="details">
+                    <p>
+                        Tyangboche is a small village with the famous Tyangboche monastery offering you striking views of Ama Dablam, lush green hills and river views.  Stay overnight at lodge.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="day">
+                    11
+                </div>
+
+                <div class="title">
+                    Trek from Tyangboche to Namche Bazaar (3440m)
+                </div>
+
+                <div class="time">
+                    Approx 4 hours 30 minutes
+                </div>
+
+                <div class="details">
+                    <p>
+                        The walk from Tyangboche is mostly downhill on the main busy trail with a few steep climbs for an hour from the bridge at Phungitenga, near Shanasha. The walk to Namche is very scenic on a long winding path. En route you will visit traditional villages of Khumjung and Khunde. From Khumjung village another 30 minutes walk brings you to the village of Khunde. Stay overnight at lodge.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="day">
+                    12
+                </div>
+
+                <div class="title">
+                    Trek from Namche Bazaar to Phakding (2640m.)
+                </div>
+
+                <div class="time">
+                    Approx 4 hours
+                </div>
+
+                <div class="details">
+                    <p>
+                        The trails descend steeply for about one and a half hours. After that, the path follows few ups and downs to Phakding via Monjo. Stay overnight at lodge.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="day">
+                    13
+                </div>
+
+                <div class="title">
+                    Trek from Phakding to Lukla (2886m.)
+                </div>
+
+                <div class="time">
+                    Approx 3 hours
+                </div>
+
+                <div class="details">
+                    <p>
+                        Your final day's trekking follows the Dudh Koshi back down to Lukla. Stay overnight in Lukla.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="day">
+                    14
+                </div>
+
+                <div class="title">
+                    Flight from Lukla to Kathmandu
+                </div>
+
+                <div class="time">
+                    Approx 35 minutes
+                </div>
+
+                <div class="details">
+                    <p>
+                        You take an early morning flight back to Kathmandu.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+
+
+    <div id="status">
+        Copyright © Nepal Environmental Treks &amp; Expedition Pvt. Ltd. 2020. All Rights Reserved.
+    </div>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Comfortaa|Raleway|Open+Sans|Open+Sans+Condensed&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67b15b82e9.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
